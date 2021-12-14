@@ -1,0 +1,18 @@
+{
+  "name": "mao-core",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/n074num83r/mao/mao-core.git"
+  },
+  "author": "Fabien Bénard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/n074num83r/mao/mao-core/issues"
+  },
+  "homepage": "https://gitlab.com/n074num83r/mao/mao-core#readme",
+  "dependencies": {
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1"
+  }
+}
