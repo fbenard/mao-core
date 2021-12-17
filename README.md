@@ -42,12 +42,12 @@ Create the file `app/index.js` with the following content:
 ```
 // Internal dependencies
 
-const mao_core = require(`mao-core`);
+const App = require(`mao-core`).App;
 
 
 // Create the app
 
-let app = new mao_core.App
+let app = new App
 (
 	[
 		// Create your controllers here
