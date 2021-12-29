@@ -1,6 +1,6 @@
 # Mão Core
 
-`mao-core` is a component that can be used to implement a new microservice.
+`mao-core` is a library that can be used to implement microservices.
 
 
 ## Getting started
@@ -83,4 +83,16 @@ Create the `.env` file with the following content:
 ```
 MAO_CORE_SERVER_HOST=localhost
 MAO_CORE_SERVER_PORT=8080
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Start the app:
+
+```
+npm start
 ```
