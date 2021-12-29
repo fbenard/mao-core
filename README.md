@@ -3,6 +3,11 @@
 `mao-core` is a library that can be used to implement microservices.
 
 
+## TODO
+
+- Add support for OpenAPI
+
+
 ## Getting started
 
 Create a new Node.js project:
