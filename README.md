@@ -60,7 +60,7 @@ let app = new App
 app.start();
 ```
 
-Create the file `app/config/config.json` with the following content:
+Create the file `app/config/config.json` with the following content (don't forget to replace `"your-service-code"`):
 
 ```
 {
@@ -68,8 +68,11 @@ Create the file `app/config/config.json` with the following content:
 	{
 		"core":
 		{
+			"discovery": {"ENV": "MAO_CORE_DISCOVERY"},
+			"service": "your-service-code",
 			"server":
 			{		
+				"scheme": {"ENV": "MAO_CORE_SERVER_SCHEME"},
 				"host": {"ENV": "MAO_CORE_SERVER_HOST"},
 				"port": {"ENV": "MAO_CORE_SERVER_PORT"}
 			}
@@ -81,6 +84,9 @@ Create the file `app/config/config.json` with the following content:
 Create the `.env` file with the following content:
 
 ```
+MAO_CORE_DISCOVERY=http://localhost:8000
+
+MAO_CORE_SERVER_SCHEME=http
 MAO_CORE_SERVER_HOST=localhost
 MAO_CORE_SERVER_PORT=8080
 ```
