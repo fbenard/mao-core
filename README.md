@@ -62,7 +62,13 @@ let app = new App
 
 // Start the app
 
-app.start();
+app.start().catch
+(
+	(error) =>
+	{
+		console.log(error.message);
+	}
+);
 ```
 
 Create the file `app/config/config.json` with the following content (don't forget to replace `"your-service-code"`):
