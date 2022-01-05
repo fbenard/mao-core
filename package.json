@@ -5,6 +5,9 @@
     "type": "git",
     "url": "git+https://gitlab.com/n074num83r/mao/mao-core.git"
   },
+  "scripts": {
+    "test": "node test.js"
+  },
   "author": "Fabien Bénard",
   "license": "MIT",
   "bugs": {
