@@ -95,7 +95,7 @@ Create the file `app/config/config.json` with the following content (don't forge
 Create the `.env` file with the following content:
 
 ```
-MAO_CORE_DISCOVERY=http://localhost:8000
+MAO_CORE_DISCOVERY=http://localhost:8080
 
 MAO_CORE_SERVER_SCHEME=http
 MAO_CORE_SERVER_HOST=localhost
