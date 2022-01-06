@@ -80,7 +80,11 @@ Create the file `app/config/config.json` with the following content (don't forge
 		"core":
 		{
 			"discovery": {"ENV": "MAO_CORE_DISCOVERY"},
-			"service": "your-service-code",
+			"service":
+			{
+				"name": "your-service-code",
+				"url": {"ENV": "MAO_CORE_SERVICE_URL"}
+			},
 			"server":
 			{		
 				"scheme": {"ENV": "MAO_CORE_SERVER_SCHEME"},
@@ -97,9 +101,11 @@ Create the `.env` file with the following content:
 ```
 MAO_CORE_DISCOVERY=http://localhost:8080
 
+MAO_CORE_SERVICE_URL=http://localhost:8081
+
 MAO_CORE_SERVER_SCHEME=http
 MAO_CORE_SERVER_HOST=localhost
-MAO_CORE_SERVER_PORT=8080
+MAO_CORE_SERVER_PORT=8081
 ```
 
 Install dependencies:
