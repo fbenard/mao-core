@@ -16,13 +16,13 @@ let config =
 	{
 		core:
 		{
-			discovery: `http://localhost:8000`,
+			discovery: `http://localhost:8080`,
 			service: `mao-core-test`,
 			server:
 			{
 				scheme: `http`,
 				host: `localhost`,
-				port: 8080
+				port: 8081
 			}
 		}
 	}
@@ -63,6 +63,5 @@ app.start()
 	(error) =>
 	{
 		console.log(error);
-		console.log(error.message);
 	}
 );
