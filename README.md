@@ -79,7 +79,7 @@ Create the file `app/config/config.json` with the following content (don't forge
 	{
 		"core":
 		{
-			"discovery": {"ENV": "MAO_CORE_DISCOVERY"},
+			"registry": {"ENV": "MAO_CORE_REGISTRY"},
 			"service":
 			{
 				"name": "your-service-code",
@@ -99,7 +99,7 @@ Create the file `app/config/config.json` with the following content (don't forge
 Create the `.env` file with the following content:
 
 ```
-MAO_CORE_DISCOVERY=http://localhost:8080
+MAO_CORE_REGISTRY=http://localhost:8080
 
 MAO_CORE_SERVICE_URL=http://localhost:8081
 

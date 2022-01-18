@@ -16,7 +16,7 @@ let config =
 	{
 		core:
 		{
-			discovery: `http://localhost:8080`,
+			registry: `http://localhost:8080`,
 			service: `mao-core-test`,
 			server:
 			{
