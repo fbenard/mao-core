@@ -3,7 +3,7 @@
   "version": "0.1.14",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/n074num83r/mao/mao-core.git"
+    "url": "git+https://github.com/fbenard/mao-core.git"
   },
   "scripts": {
     "test": "node test.js"
@@ -11,9 +11,9 @@
   "author": "Fabien Bénard",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/n074num83r/mao/mao-core/issues"
+    "url": "https://github.com/fbenard/mao-core/issues"
   },
-  "homepage": "https://gitlab.com/n074num83r/mao/mao-core#readme",
+  "homepage": "https://github.com/fbenard/mao-core",
   "dependencies": {
     "axios": "^0.24.0",
     "dotenv": "^8.6.0",
