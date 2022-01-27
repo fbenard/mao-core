@@ -16,13 +16,12 @@ let config =
 	{
 		core:
 		{
-			registry: `http://localhost:8080`,
 			service: `mao-core-test`,
 			server:
 			{
 				scheme: `http`,
 				host: `localhost`,
-				port: 8081
+				port: 8080
 			}
 		}
 	}
@@ -41,18 +40,20 @@ app.start()
 (
 	() =>
 	{
-		axios.get(`http://localhost:8080/api/health/ready`)
+		axios.get(`${global.config.mao.core.server.scheme}://${global.config.mao.core.server.host}:${global.config.mao.core.server.port}/api/health/ready`)
 		.then
 		(
 			(response) =>
 			{
 				if (response.status === 200)
 				{
-					console.log("Application is ready!");
+					console.log(`Great success! Application is ready!`);
+					process.exit(0);
 				}
 				else
 				{
-					throw "BWAAAH";
+					console.log(`Error: application is not ready`);
+					process.exit(1);
 				}
 			}
 		);
@@ -63,5 +64,6 @@ app.start()
 	(error) =>
 	{
 		console.log(error);
+		process.exit(2);
 	}
 );
