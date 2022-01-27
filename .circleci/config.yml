@@ -11,9 +11,11 @@ jobs:
       - checkout
       - snyk/scan
       - run:
+          name: Install dependencies
+          command: npm install -q
+      - run:
           name: Test
-          command: |
-            npm test
+          command: npm test
 workflows:
   my-workflow:
     jobs:
