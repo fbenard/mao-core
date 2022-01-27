@@ -6,11 +6,16 @@ orbs:
 jobs:
   my-job:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/node:lts
     steps:
       - checkout
       - snyk/scan
-
+      - run:
+          name: Install dependencies
+          command: npm install -q
+      - run:
+          name: Test
+          command: npm test
 workflows:
   my-workflow:
     jobs:
