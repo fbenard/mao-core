@@ -9,7 +9,9 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - snyk/scan
+      - run: npm install -q
+      - snyk/scan:
+        project: ${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BRANCH}
 
 workflows:
   my-workflow:
