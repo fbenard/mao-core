@@ -9,10 +9,11 @@ jobs:
       - image: cimg/node:lts
     steps:
       - checkout
-      - run: npm install -q
-      - snyk/scan:
-        project: ${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BRANCH}
-
+      - snyk/scan
+      - run:
+          name: Test
+          command: |
+            npm test
 workflows:
   my-workflow:
     jobs:
