@@ -1,0 +1,17 @@
+version: 2.1
+
+orbs:
+  snyk: snyk/snyk@1.1.2
+
+jobs:
+  my-job:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - snyk/scan
+
+workflows:
+  my-workflow:
+    jobs:
+      - my-job
