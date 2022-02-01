@@ -5,7 +5,7 @@ const { setWorldConstructor } = require(`@cucumber/cucumber`);
 
 // Internal dependencies
 
-const App = require(`../../lib/App`);
+const App = require(`${process.cwd()}/lib/App`);
 
 
 /**
