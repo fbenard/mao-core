@@ -1,0 +1,59 @@
+openapi: "3.0.3"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "mao-service-registry"
+  license:
+    name: "MIT"
+    url: "https://opensource.org/licenses/mit-license.php"
+paths:
+  /service/{serviceCode}:
+    delete:
+      description: "Unregister a service"
+      parameters:
+        - name: "serviceCode"
+          in: "path"
+          schema:
+            type: string
+          required: true
+      responses:
+        "200":
+          description: "Service unregistered"
+        "404":
+          description: "Service not found"
+    get:
+      description: "Retrieve a service URL"
+      parameters:
+        - name: "serviceCode"
+          in: "path"
+          schema:
+            type: string
+          required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            text/plain:
+              schema:
+                type: string
+                format: uri
+        "404":
+          description: "Service not found"
+    post:
+      description: "Register a service"
+      parameters:
+        - name: "serviceCode"
+          in: "path"
+          schema:
+            type: string
+          required: true
+      requestBody:
+        required: true
+        content:
+          text/plain:
+            schema:
+              type: string
+              format: uri
+      responses:
+        "201":
+          description: "Service registered"
