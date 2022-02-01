@@ -6,7 +6,7 @@
     "url": "git+https://github.com/fbenard/mao-core.git"
   },
   "scripts": {
-    "test": "node tests/index.js"
+    "test": "./node_modules/.bin/cucumber-js --publish-quiet tests/features/**/*.feature --require \"tests/steps/**/*.js\" --require \"tests/steps/world.js\""
   },
   "author": "Fabien Bénard",
   "license": "MIT",
@@ -15,9 +15,13 @@
   },
   "homepage": "https://github.com/fbenard/mao-core",
   "dependencies": {
-    "axios": "^0.25.0",
     "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "express-openapi-validator": "^4.13.5"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "axios": "^0.25.0",
+    "chai": "^4.3.6"
   }
 }
