@@ -1,7 +1,7 @@
 // External dependencies
 
-const axios = require(`axios`);
 const { When } = require(`@cucumber/cucumber`);
+const axios = require(`axios`);
 
 
 /**
