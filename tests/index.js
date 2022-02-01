@@ -5,32 +5,17 @@ const axios = require(`axios`);
 
 // Internal dependencies
 
-const App = require(`./lib/App`);
-
-
-//
-
-let config =
-{
-	mao:
-	{
-		core:
-		{
-			service: `mao-core-test`,
-			server:
-			{
-				scheme: `http`,
-				host: `localhost`,
-				port: 9090
-			}
-		}
-	}
-}
+const App = require(`../lib/App`);
 
 
 // Create the app
 
-let app = new App([], config);
+let app = new App
+(
+	[],
+	`${process.cwd()}/tests/config/config.json`,
+	`${process.cwd()}/tests/config/api.yml`
+);
 
 
 // Start the app

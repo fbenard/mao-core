@@ -1,0 +1,14 @@
+openapi: "3.0.3"
+info:
+  version: "1.0.0"
+  title: "mao-core"
+  license:
+    name: "MIT"
+    url: "https://opensource.org/licenses/mit-license.php"
+paths:
+  /api/health/ready:
+    get:
+      description: "Check whether service is ready"
+      responses:
+        "200":
+          description: "Service is ready"
