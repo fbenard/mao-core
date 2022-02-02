@@ -21,3 +21,5 @@ workflows:
   my-workflow:
     jobs:
       - my-job
+        context:
+          - mao
