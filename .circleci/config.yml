@@ -12,7 +12,7 @@ jobs:
       - snyk/scan
       - run:
           name: Install dependencies
-          command: npm install -q
+          command: npm ci
       - run:
           name: Run tests
           command: npm test
