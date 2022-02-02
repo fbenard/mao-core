@@ -17,7 +17,7 @@ When
 
 		this.response = await axios.get
 		(
-			`${global.config.mao.core.server.scheme}://${global.config.mao.core.server.host}:${global.config.mao.core.server.port}/api/health/ready`
+			`http://${global.config.mao.core.server.host}:${global.config.mao.core.server.port}/api/health/ready`
 		);
 	}
 );

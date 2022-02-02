@@ -82,7 +82,6 @@ Create the file `app/config/config.json` with the following content (don't forge
 			},
 			"server":
 			{		
-				"scheme": {"ENV": "MAO_CORE_SERVER_SCHEME"},
 				"host": {"ENV": "MAO_CORE_SERVER_HOST"},
 				"port": {"ENV": "MAO_CORE_SERVER_PORT"}
 			}
@@ -98,7 +97,6 @@ MAO_CORE_REGISTRY=http://localhost:8080
 
 MAO_CORE_SERVICE_URL=http://localhost:8081
 
-MAO_CORE_SERVER_SCHEME=http
 MAO_CORE_SERVER_HOST=localhost
 MAO_CORE_SERVER_PORT=8081
 ```
