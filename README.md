@@ -64,6 +64,11 @@ app.start().catch
 		console.log(error.message);
 	}
 );
+
+
+// Export app
+
+module.exports = app;
 ```
 
 Create the file `app/config/config.json` with the following content (don't forget to replace `"your-service-code"`):
@@ -88,6 +93,25 @@ Create the file `app/config/config.json` with the following content (don't forge
 		}
 	}
 }
+```
+
+Create the file `app/config/api.yml` with the following content (don't forget to replace `"your-service-code"`). Every route registered in controllers must be defined there.
+
+```
+openapi: "3.0.3"
+info:
+  version: "1.0.0"
+  title: "your-service-code"
+  license:
+    name: "MIT"
+    url: "https://opensource.org/licenses/mit-license.php"
+paths:
+  /api/health/ready:
+    get:
+      description: "Check whether service is ready"
+      responses:
+        "200":
+          description: "Service is ready"
 ```
 
 Create the `.env` file with the following content:
