@@ -10,7 +10,7 @@ const chai = require(`chai`);
 
 Then
 (
-	"the app is healthy",
+	"the app is ready",
 	async function()
 	{
 		// Check whether status code is 200

@@ -10,7 +10,7 @@ const axios = require(`axios`);
 
 When
 (
-	"I check the app health",
+	"I check whether the app is ready",
 	async function()
 	{
 		// Call GET /api/health/ready
