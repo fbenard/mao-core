@@ -6,6 +6,7 @@
     "url": "git+https://github.com/fbenard/mao-core.git"
   },
   "scripts": {
+    "start": "nodemon app/index.js",
     "test": "cucumber-js --publish-quiet tests/features/**/*.feature --require \"tests/steps/**/*.js\" --require \"tests/steps/world.js\""
   },
   "author": "Fabien Bénard",
@@ -15,13 +16,14 @@
   },
   "homepage": "https://github.com/fbenard/mao-core",
   "dependencies": {
-    "dotenv": "^8.6.0",
-    "express": "^4.17.1",
-    "express-openapi-validator": "^4.13.5"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-openapi-validator": "^5.1.2"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^7.3.2",
-    "axios": "^0.25.0",
-    "chai": "^4.3.6"
+    "@cucumber/cucumber": "^10.0.1",
+    "axios": "^1.6.2",
+    "chai": "^4.3.10",
+    "nodemon": "^3.0.2"
   }
 }
