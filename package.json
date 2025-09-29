@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "nodemon app/index.js",
-    "test": "cucumber-js tests/features/**/*.feature --require \"tests/steps/**/*.js\" --require \"tests/steps/world.js\""
+    "test": "cucumber-js tests/features/**/*.feature --require \"tests/steps/**/*.js\""
   },
   "author": "Fabien Bénard",
   "license": "MIT",
