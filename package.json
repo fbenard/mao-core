@@ -15,15 +15,18 @@
     "url": "https://github.com/fbenard/mao-core/issues"
   },
   "homepage": "https://github.com/fbenard/mao-core",
+  "engines": { 
+    "node": ">=24.13.1"
+  },
   "dependencies": {
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "express-openapi-validator": "^5.6.0"
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "express-openapi-validator": "^5.6.2"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^12.2.0",
-    "axios": "^1.12.2",
-    "chai": "^6.2.0",
-    "nodemon": "^3.1.10"
+    "@cucumber/cucumber": "^12.6.0",
+    "axios": "^1.13.5",
+    "chai": "^6.2.2",
+    "nodemon": "^3.1.11"
   }
 }
