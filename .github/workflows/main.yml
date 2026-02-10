@@ -1,4 +1,4 @@
-name: mao-core
+name: main
 
 on:
   push:
