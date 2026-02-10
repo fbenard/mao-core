@@ -1,6 +1,6 @@
 // External dependencies
 
-const { setWorldConstructor } = require(`@cucumber/cucumber`);
+const { setWorldConstructor, World } = require(`@cucumber/cucumber`);
 
 
 // Internal dependencies
@@ -12,14 +12,19 @@ const App = require(`${process.cwd()}/lib/App`);
  *
  */
 
-class World
+class CustomWorld extends World
 {
 	/**
 	 * 
 	 */
 
-	constructor()
+	constructor(options)
 	{
+		// Call parent constructor
+
+		super(options);
+
+
 		// Create the app
 
 		this.app = new App
@@ -34,4 +39,4 @@ class World
 
 // Set the world constructor
 
-setWorldConstructor(World);
+setWorldConstructor(CustomWorld);
