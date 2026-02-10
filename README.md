@@ -30,10 +30,10 @@ Edit the `package.json` file as follows:
   "start": "nodemon app/index.js"
 },
 "dependencies": {
-	"mao-core": "^0.1.0"
+	"mao-core": "^0.1"
 },
 "devDependencies": {
-  "nodemon": "^2.0.15"
+  "nodemon": "^3.1.11"
 }
 ```
 
