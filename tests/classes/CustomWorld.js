@@ -1,6 +1,6 @@
 // External dependencies
 
-const { setWorldConstructor, World } = require(`@cucumber/cucumber`);
+const { World } = require(`@cucumber/cucumber`);
 
 
 // Internal dependencies
@@ -37,6 +37,6 @@ class CustomWorld extends World
 }
 
 
-// Set the world constructor
+// Export the class
 
-setWorldConstructor(CustomWorld);
+module.exports = CustomWorld;
