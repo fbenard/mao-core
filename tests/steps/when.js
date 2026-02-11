@@ -21,3 +21,27 @@ When
 		);
 	}
 );
+
+
+/**
+ *
+ */
+
+When
+(
+	"I start and stop the app {int} times",
+	async function(nbOccurences)
+	{		
+		for (let i = 0; i < nbOccurences; i++)
+		{
+			// Start the app
+
+			await this.app.start();
+
+			
+			// Stop the app
+			
+			await this.app.stop();
+		}
+	}
+);
