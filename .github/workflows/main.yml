@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  MAO_CORE_SERVER_HOST: localhost
+  MAO_CORE_SERVER_PORT: 8080
+
 jobs:
   build:
 
