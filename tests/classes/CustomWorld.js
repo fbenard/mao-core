@@ -5,7 +5,7 @@ const { World } = require(`@cucumber/cucumber`);
 
 // Internal dependencies
 
-const App = require(`${process.cwd()}/lib/App`);
+const App = require(`../../lib/App`);
 
 
 /**
