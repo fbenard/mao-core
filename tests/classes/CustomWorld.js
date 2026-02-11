@@ -30,8 +30,8 @@ class CustomWorld extends World
 		this.app = new App
 		(
 			[],
-			`${process.cwd()}/tests/config/config.json`,
-			`${process.cwd()}/tests/config/api.yml`
+			`${process.cwd()}/lib/config/config.json`,
+			`${process.cwd()}/lib/config/api.yml`
 		);
 	}
 }
